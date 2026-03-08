@@ -1,0 +1,61 @@
+html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏰 المرشد السياحي الذكي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>🏰 المرشد السياحي الذكي</h1>
+        <p>اكتشف جمال سلطنة عمان 🇴🇲</p>
+    </header>
+
+    <main>
+        <section class="current-location">
+            <h2>📍 موقعك الحالي</h2>
+            <div id="location-info">
+                <p>🔄 جاري تحديد الموقع...</p>
+            </div>
+            <button id="enable-location" class="btn">تفعيل تتبع الموقع</button>
+        </section>
+
+        <section class="map-container">
+            <h2>🗺️ خريطة المواقع السياحية</h2>
+            <div id="map"></div>
+        </section>
+
+        <section class="nearby-places">
+            <h2>🎯 المواقع القريبة منك</h2>
+            <div id="places-list">
+                <p>فعّل تتبع الموقع لمعرفة الأماكن القريبة منك</p>
+            </div>
+        </section>
+
+        <section class="all-places">
+            <h2>📋 جميع المواقع السياحية في عمان</h2>
+            <div id="all-places-grid"></div>
+        </section>
+    </main>
+
+    <div id="place-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <footer>
+        <p>صُنع بـ ❤️ في سلطنة عمان</p>
+        <p>© 2024 المرشد السياحي الذكي</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
